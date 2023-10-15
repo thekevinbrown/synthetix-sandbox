@@ -8,7 +8,7 @@ source ="synthetix-omnibus:3.3.4"
 [contract.sample_integration]
 artifact = "SampleIntegration"
 args = [
-    "<%= imports.synthetixOmnibus.contracts.system.CoreProxy %>",
-    "<%= imports.synthetixOmnibus.contracts.system.USDProxy %>"
+    "<%= imports.synthetixSandbox.imports.system.CoreProxy.address %>",
+    "<%= imports.synthetixSandbox.imports.system.USDProxy.address %>"
 ]
 depends = ["import.synthetixOmnibus"]
